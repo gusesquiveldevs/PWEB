@@ -1,0 +1,87 @@
+ nav.portada {
+    position: static;
+  }
+  
+div.filaflex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  clear: both;
+  margin: 5px 0px;
+}
+
+div.filaflex.cabecera {
+  margin-bottom: -5px;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+div.filaflex.nogrow div:not([class="icono"]) {
+  width: auto;
+  flex-grow: 0;
+}
+
+div.filaflex.nogrow h2, div.filaflex.nogrow h3 {
+  margin: 0;
+}
+
+div.filaflex div:not([class="icono"]) {
+  width: 100px;
+  flex-grow: 1;
+}
+
+div.filaflex div.nogrow {
+  width: auto;
+  flex-grow: 0;
+}
+
+div.filaflex div.columnaflex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+}
+
+div.filaflex div.columnaflex div {
+  width: auto;
+}
+
+div.filaflex div.icono-navegadores {
+  flex-grow: 0;
+  width: 50px;
+  margin-top: 8px;
+}
+
+div.filaflex div.icono-navegadores-vacio {
+  flex-grow: 0;
+  width: 50px;
+  margin-top: 8px;
+}
+
+div.filaflex div.icono-ok {
+  flex-grow: 0;
+  width: 40px;
+  margin-top: 8px;
+}
+
+div.filaflex div.icono-xhtml-ok {
+  flex-grow: 0;
+  width: 120px;
+  margin-top: 8px;
+}
+
+div.filaflex div.icono-enlace {
+  flex-grow: 0;
+  width: 40px;
+  /* no tiene margin-top porque uso la clase en div.cabecera */
+}
+
+div.filaflex pre {
+  margin: 5px 0;
+  white-space: pre-wrap;
+}
